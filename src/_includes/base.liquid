@@ -15,8 +15,9 @@
 
 <body class="tk-loos-normal font-normal">
     <header>
-        <nav class="flex items-center justify-between flex-wrap p-6 w-full z-10 top-0" x-data="{ isOpen: false }"
-            @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-blue-600' : isOpen , 'bg-blue-900' : !isOpen}">
+        <nav class="flex items-center justify-between flex-wrap p-6 w-full z-10 top-0 md:py-6 md:px-20"
+            x-data="{ isOpen: false }" @keydown.escape="isOpen = false"
+            :class="{ 'shadow-lg bg-blue-600' : isOpen , 'bg-blue-900' : !isOpen}">
             <!--Logo etc-->
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <a class="text-white no-underline hover:text-white hover:no-underline" href="{{ page | relative }}">
