@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/sxw5bam.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@1.2.x/dist/index.min.js"
+        defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
     <script src="https://kit.fontawesome.com/861df2df43.js" crossorigin="anonymous"></script>
     {% seo %}
 </head>
 
-<body class="flex flex-col scroll tk-loos-normal font-normal">
+<body class="scroll tk-loos-normal font-normal">
     <header>
-        <nav class="flex items-center justify-between flex-wrap p-6 sticky w-full z-10 top-0 transition-colors duration-300 ease-in-out"
-            x-data="{ isOpen: false }" @keydown.escape="isOpen = false"
-            :class="{ 'shadow-lg bg-blue-600' : isOpen , 'bg-blue-900' : !isOpen}">
+        <nav class="flex items-center justify-between flex-wrap p-6 w-full z-10 top-0" x-data="{ isOpen: false }"
+            @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-blue-600' : isOpen , 'bg-blue-900' : !isOpen}">
             <!--Logo etc-->
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <a class="text-white no-underline hover:text-white hover:no-underline" href="{{ page | relative }}">
@@ -72,9 +73,13 @@
     <main class="w-3/4 m-auto">
         {{ content | safe }}
     </main>
-    <footer class="flex justify-center w-full bg-blue-900 text-white transition-colors duration-300 ease-in-out p-6">
+    <footer class="flex justify-center w-full bg-blue-900 text-white p-6">
         Copyright &copy; San Nicolas Tech {% year %}
     </footer>
+    <button id="scroll-to-top" class="fixed bottom-10 right-0 mr-10 p-5 bg-blue-800 text-white" x-data
+        x-on:click="$scroll(0)">Scroll
+        to top</scroll>
+        <script src="/js/script.js"></script>
 </body>
 
 </html>

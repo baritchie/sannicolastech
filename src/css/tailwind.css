@@ -8,4 +8,7 @@
     html {
         scroll-behavior: smooth;
     }
+    #scroll-to-top {
+        transition: bottom .2s linear;
+    }
 }
