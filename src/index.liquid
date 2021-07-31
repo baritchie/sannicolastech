@@ -5,15 +5,18 @@ hero_img: img/homepage_hero.jpeg
 hero_text: San Nicolas Tech
 hero_sub: Digital Presence Development
 ---
+<section id="info">
+
+</section>
 <section id="portfolio"
-    class="grid grid-cols-1 w-3/4 mx-auto md:grid-cols-2 grid-flow-row-dense gap-y-5 gap-x-0 md:gap-y-10 md:gap-x-20 tk-loos-compressed mt-10 mb-10">
-    <div class="col-span-2 text-center">
-        <h2 class="text-5xl tk-loos-normal">Portfolio</h2>
+    class="grid grid-cols-1 w-3/4 mx-auto md:grid-cols-2 md:grid-flow-row-dense gap-y-5 gap-x-5 md:gap-y-10 md:gap-x-20 tk-loos-compressed mt-10 mb-10">
+    <div class="col-span-1 text-center">
+        <h2 class="text-5xl tk-loos-normal">Case Studies</h2>
     </div>
-    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear block"
+    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear grid"
         href="{{ page | relative }}cultmethod">
         <div
-            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 hover:rounded-md p-5 transform transition-all duration-300 hover:scale-105 md:min-h-full px-16">
+            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 p-5 transform transition-all duration-300 hover:scale-105 md:min-h-full px-16">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1091.2 168.4" fill="currentColor"
                 class="text-gray-900 max-h-12 w-full">
                 <path
@@ -40,31 +43,31 @@ hero_sub: Digital Presence Development
             </svg>
         </div>
     </a>
-    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear block"
+    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear grid"
         href="{{ page | relative }}venturecasualty">
         <div
-            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 hover:rounded-md p-5 transform transition-all duration-300 hover:scale-105 min-h-full px-10">
+            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 p-5 transform transition-all duration-300 hover:scale-105 min-h-full px-10">
             <img src="{{ page | relative }}img/vchorizontal.jpg" class="h-full w-full">
         </div>
     </a>
-    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear block"
+    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear grid"
         href="{{ page | relative }}ivanzaragoza">
         <div
-            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 hover:rounded-md p-5 transform transition-all duration-300 hover:scale-105 min-h-full px-10">
+            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 p-5 transform transition-all duration-300 hover:scale-105 min-h-full px-10">
             <img src="{{ page | relative }}img/ivanzaragoza.jpg" class="h-full w-full">
         </div>
     </a>
-    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear block"
+    <a class="hover:text-gray-600 transition-colors duration-200 ease-linear grid"
         href="{{ page | relative }}summerschoolfrance">
         <div
-            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 hover:rounded-md p-5 transform transition-all duration-300 hover:scale-105 min-h-full px-10">
+            class="flex align-center justify-center flex-col text-center border-2 border-blue-900 p-5 transform transition-all duration-300 hover:scale-105 min-h-full px-10">
             <img src="{{ page | relative }}img/summerschoolfrance.jpg" class="h-full w-full">
         </div>
     </a>
 </section>
 <section id="testimonials"
-    class="grid grid-cols-1 w-3/4 mx-auto md:grid-cols-3 grid-flow-row-dense gap-x-0 gap-y-5 md:gap-x-10 md:gap-y-10 mt-16 mb-10">
-    <div class="col-span-3 text-center">
+    class="grid grid-cols-1 w-3/4 mx-auto md:grid-cols-3 gap-x-5 md:grid-flow-row-dense gap-y-5 md:gap-x-10 md:gap-y-10 mt-24 mb-10">
+    <div class="text-center">
         <h2 class="text-5xl tk-loos-normal">Testimonials</h2>
     </div>
     <div class="flex align-center justify-center flex-col">
@@ -93,4 +96,33 @@ hero_sub: Digital Presence Development
         <p class="text-right">- Caroline Jones (<a href="https://summerschoolfrance.com" target="_blank">Summer School
                 France</a>)</p>
     </div>
+</section>
+<section id="contact" class="md:w-3/4 mx-auto flex md:flex-row flex-col flex-wrap justify-evenly my-24">
+    <div class="md:w-4/12 mb-10 md:mb-0 py-10 md:py-0 flex items-center justify-start bg-blue-900">
+        <h3 class="text-white text-2xl px-10">Ready to take your digital presence to the next level?</h3>
+    </div>
+    <form name="contact" method="POST" data-netlify="true" class="text-gray-800 md:w-7/12">
+        <div class="flex flex-row flex-wrap md:w-full w-screen px-10">
+            <div class="flex justify-between flex-col md:flex-row md:w-full w-screen">
+                <div class="w-full md:w-1/2 flex flex-col md:flex-row mb-6 md:mr-5">
+                    <input type="text" name="name" class="flex-auto border-2 focus:border-blue-900 py-3 px-5"
+                        placeholder="Your Name:" />
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col md:flex-row mb-6">
+                    <input type="email" name="email" class="flex-auto border-2 focus:border-blue-900 py-3 px-5"
+                        placeholder="Your Email:" />
+                </div>
+            </div>
+            <div class="w-screen md:w-full flex flex-row mb-6">
+                <textarea name="message" class="flex-auto w-3/4 border-2 focus:border-blue-900 py-3 px-5"
+                    placeholder="How can we help?"></textarea>
+            </div>
+        </div>
+        <div class="w-screen md:w-full flex px-10">
+            <button type="submit"
+                class="flex-auto border-2 border-blue-900 hover:bg-blue-900 hover:text-white py-3 transition-colors duration-75 ease-linear">Get
+                in
+                Touch</button>
+        </div>
+    </form>
 </section>

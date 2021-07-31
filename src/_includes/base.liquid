@@ -13,7 +13,7 @@
     {% seo %}
 </head>
 
-<body class="scroll tk-loos-normal font-normal">
+<body class="tk-loos-normal font-normal">
     <header>
         <nav class="flex items-center justify-between flex-wrap p-6 w-full z-10 top-0" x-data="{ isOpen: false }"
             @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-blue-600' : isOpen , 'bg-blue-900' : !isOpen}">
@@ -70,7 +70,7 @@
             </div>
         </div>
     </header>
-    <main class="w-3/4 m-auto">
+    <main class="w-full md:w-3/4 m-auto">
         {{ content | safe }}
     </main>
     <footer class="flex justify-center w-full bg-blue-900 text-white p-6">
