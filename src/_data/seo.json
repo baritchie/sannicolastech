@@ -1,0 +1,13 @@
+{
+    "title": "San Nicolas Tech",
+    "description": "San Nicolas Tech provides comprehensive digital presence development.",
+    "url": "https://sannicolastech.com/",
+    "author": "Benjamin Rojas-Ritchie",
+    "twitter": "benrojasritchie",
+    "image": "",
+    "options": {
+        "titleDivider": "|",
+        "imageWithBaseUrl": true,
+        "showPageNumbers": false
+    }
+}
