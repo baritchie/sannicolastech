@@ -59,8 +59,12 @@
                 </ul>
             </div>
         </nav>
+        <!-- Hero -->
+        {% if hero_img == blank %}
+
+        {% elsif hero_img != blank %}
         <div class="h-80 bg-opacity-50 bg-black flex items-center justify-center bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), 
-            rgba(0, 0, 0, 0.45)),url('{{ page | relative }}{{ hero_img }}');background-position: center;">
+                    rgba(0, 0, 0, 0.45)),url('{{ page | relative }}{{ hero_img }}');background-position: center;">
             <div class="mx-2 text-center">
                 <h1 class="text-5xl text-white">
                     {{ hero_text }}
@@ -70,6 +74,7 @@
                 </h2>
             </div>
         </div>
+        {% endif %}
     </header>
     <main class="w-full md:w-3/4 m-auto">
         {{ content | safe }}
