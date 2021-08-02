@@ -12,8 +12,6 @@ window.onscroll = function() {
 function previousPage() {
     var oldURL = document.referrer.split('/')[2].split(':')[0];
     var newURL = window.location.hostname;
-    alert(oldURL);
-    alert(newURL);
     if (oldURL == newURL)
         window.history.go(-1);
     else 
